@@ -1,6 +1,7 @@
-from data.db.database import get_db
-from data.db.crud import get_all_pois
-from bright_sky.services import generate_alert
+import os 
+from src.data.db.database import get_db
+from src.data.db.crud import get_all_pois
+from src.bright_sky.services import generate_alert
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
